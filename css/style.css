@@ -1,0 +1,291 @@
+body, html {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', serif;
+    width: 100vw;
+}
+
+audio{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    width: 300px;
+    height: 20px;
+}
+
+.musicbtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.musicbtn img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.container-greeting {
+    width: 40vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgba(240, 248, 255, 0) 0%, rgba(240, 248, 255, 1) 50%, rgba(240, 248, 255, 0) 100%);
+    background-origin: padding-box;
+    padding: 30px;
+}
+
+
+.btn-container {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    display: flex; 
+    gap: 10px; 
+    flex-direction: column;
+}
+
+
+.dropdown-button {
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%; 
+    border: none; 
+    overflow: hidden; 
+    background-color: transparent; 
+    padding: 0; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dropdown-button img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+
+.dropdown-menu {
+    position: fixed; 
+    top: 50px; 
+    left: 0;
+    background-color: transparent; 
+    border-radius: 5px;
+    display: none; 
+    flex-direction: column;
+    gap: 10px; 
+    padding: 10px;
+    z-index: 1000; 
+}
+
+.dropdown-menu.active {
+    display: flex; 
+}
+
+.dropdown-menu button {
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%; 
+    border: none; 
+    overflow: hidden; 
+    background-color: transparent; 
+    padding: 0; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu button img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+.container-todo {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20vw;
+    min-width: 20vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.829);
+    border-radius: 10px;
+    background-origin: padding-box;
+    padding : 5px 10px 0px 10px;
+}
+.container-todo.visible {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container-todo.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ShowTodo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ShowTodo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+.container-weather {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*background-color: rgba(240, 248, 255, 0.829);*/
+    background-origin: padding-box;
+    padding: 5px;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+
+.highlight1 {
+    color: darkgreen;
+    font-size: 25px;
+    font-weight: bold;
+}
+.highlight2 {
+    color: rgb(34, 15, 65);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 0;
+}
+#quote span:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#todo-list span {
+    margin-right: 10px; 
+    flex-grow: 1; /* 텍스트가 남는 공간을 차지하게 하여 버튼이 오른쪽 끝에 배치됨 */
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+#greeting {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 10px;
+}
+
+#clock {
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 10px;
+}
+
+.search {
+    height: 28px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    padding: 9px;
+    border: 1px solid #c5c5c54f;
+    margin-top: 10px;
+}
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding-left: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    width: 350px;
+}
+.search-btn {
+    color: #0f1b5f;
+    float: right;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
