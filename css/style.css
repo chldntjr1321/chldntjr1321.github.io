@@ -18,17 +18,24 @@
   --size-max-width: 1200px;
 }
 
-
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
 }
 
-h1,h2,h3,p,ul {
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
 }
 
@@ -37,7 +44,7 @@ ul {
   padding: 0;
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--color-text);
 }
@@ -45,7 +52,7 @@ a{
 button {
   background-color: transparent;
   outline: 0;
-  border: 0; 
+  border: 0;
 }
 
 button:focus {
@@ -195,7 +202,7 @@ button:focus {
   color: var(--color-text);
   border-radius: 1rem;
   cursor: default;
-  box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
 }
 
 .major__icon {
@@ -248,7 +255,10 @@ button:focus {
   margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .skills__title {
@@ -358,7 +368,7 @@ button:focus {
   transition: all 250ms ease-out;
 }
 
-.project{
+.project {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
@@ -392,7 +402,7 @@ button:focus {
 }
 
 .project__title:after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   left: 50%;
@@ -494,9 +504,9 @@ button:focus {
     background-color: var(--color-primary);
   }
 
-.header__toggle {
-  display: block;
-}
+  .header__toggle {
+    display: block;
+  }
 
   .header__menu {
     display: none;
@@ -557,7 +567,7 @@ button:focus {
   }
 
   .testimonial:nth-child(even) .testimonial__img {
-  order: 0;
+    order: 0;
   }
 
   .arrow-up {
