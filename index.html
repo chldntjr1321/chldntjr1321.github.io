@@ -31,12 +31,15 @@
       src="https://kit.fontawesome.com/983daab477.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -65,18 +68,20 @@
     <main>
       <!-- Home -->
       <section id="home">
-        <div class="home__container">
+        <div class="max-container home__container">
           <img
             class="home__avatar"
             src="images/profile.png"
             alt="WooSeok's profile"
           />
-          <h2 class="home__title">
-            Hello <br />I&#39;m
-            <strong class="home__title--strong">Dream Coder</strong>, Wooseok
-          </h2>
-          <p class="home__description">항상 배우고싶은 개발자입니다.</p>
-          <a class="home__contact" href="#contact">Contact Me</a>
+          <div>
+            <h2 class="home__title" aria-label="Hello, I'm Dream Coder WooSeok">
+              Hello <br />I&#39;m
+              <strong class="home__title--strong">Dream Coder</strong>, Wooseok
+            </h2>
+            <p class="home__description">항상 노력하고 있는 개발자입니다.</p>
+            <a class="home__contact" href="#contact">Contact Me</a>
+          </div>
         </div>
       </section>
       <!-- About -->
